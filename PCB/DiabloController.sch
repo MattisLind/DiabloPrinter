@@ -878,12 +878,6 @@ Wire Wire Line
 	900  2050 600  2050
 Wire Wire Line
 	900  2150 600  2150
-Wire Wire Line
-	900  2250 600  2250
-Wire Wire Line
-	900  2350 600  2350
-Wire Wire Line
-	900  2450 600  2450
 Text Label 600  1350 0    60   ~ 0
 PDB1
 Entry Wire Line
@@ -902,12 +896,6 @@ Entry Wire Line
 	500  2150 600  2050
 Entry Wire Line
 	500  2250 600  2150
-Entry Wire Line
-	500  2350 600  2250
-Entry Wire Line
-	500  2450 600  2350
-Entry Wire Line
-	500  2550 600  2450
 Text Label 600  1450 0    60   ~ 0
 PDB2
 Text Label 600  1550 0    60   ~ 0
@@ -924,11 +912,11 @@ Text Label 600  2050 0    60   ~ 0
 PDB8
 Text Label 600  2150 0    60   ~ 0
 PDB9
-Text Label 600  2250 0    60   ~ 0
+Text Label 2300 3450 0    60   ~ 0
 PDB10
-Text Label 600  2350 0    60   ~ 0
+Text Label 2300 3550 0    60   ~ 0
 PDB11
-Text Label 600  2450 0    60   ~ 0
+Text Label 2300 3650 0    60   ~ 0
 PDB12
 Wire Wire Line
 	2300 2250 2800 2250
@@ -1107,7 +1095,7 @@ Entry Wire Line
 Wire Bus Line
 	2900 600  2900 2050
 Wire Bus Line
-	2900 2350 2900 7150
+	2900 2350 2900 3300
 Entry Wire Line
 	2900 6800 3000 6900
 Entry Wire Line
@@ -1629,9 +1617,6 @@ Wire Wire Line
 	600  1550 900  1550
 Wire Wire Line
 	600  1350 900  1350
-NoConn ~ 2300 3450
-NoConn ~ 2300 3550
-NoConn ~ 2300 3650
 NoConn ~ 900  3200
 NoConn ~ 900  2550
 Text Label 7650 850  0    60   ~ 0
@@ -2171,4 +2156,327 @@ Wire Wire Line
 NoConn ~ 9550 6000
 NoConn ~ 9450 4950
 NoConn ~ 10700 4950
+Entry Wire Line
+	2900 3450 3000 3550
+Wire Bus Line
+	2900 7150 2900 3900
+Wire Bus Line
+	2900 3900 2800 3900
+Wire Bus Line
+	2800 3900 2800 3300
+Wire Bus Line
+	2800 3300 2900 3300
+Entry Wire Line
+	2900 3550 3000 3650
+Entry Wire Line
+	2900 3650 3000 3750
+Wire Wire Line
+	2300 3450 2900 3450
+Wire Wire Line
+	2300 3550 2900 3550
+Wire Wire Line
+	2300 3650 2900 3650
+NoConn ~ 900  2250
+NoConn ~ 900  2350
+NoConn ~ 900  2450
+$Comp
+L R R37
+U 1 1 5AF885E0
+P 3350 7450
+F 0 "R37" V 3430 7450 50  0000 C CNN
+F 1 "R" V 3350 7450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3280 7450 50  0001 C CNN
+F 3 "" H 3350 7450 50  0001 C CNN
+	1    3350 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 5AF88C43
+P 3450 7600
+F 0 "#PWR026" H 3450 7350 50  0001 C CNN
+F 1 "GND" H 3450 7450 50  0000 C CNN
+F 2 "" H 3450 7600 50  0001 C CNN
+F 3 "" H 3450 7600 50  0001 C CNN
+	1    3450 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 7600 3350 7600
+Wire Wire Line
+	3350 7300 3350 7250
+Connection ~ 3350 7250
+$Comp
+L R R36
+U 1 1 5AF897FB
+P 3300 7050
+F 0 "R36" V 3380 7050 50  0000 C CNN
+F 1 "R" V 3300 7050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 7050 50  0001 C CNN
+F 3 "" H 3300 7050 50  0001 C CNN
+	1    3300 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 7050 3100 7050
+Wire Wire Line
+	3100 7050 3100 6900
+Connection ~ 3100 6900
+Wire Wire Line
+	3450 1100 3450 7600
+$Comp
+L R R35
+U 1 1 5AF89D53
+P 3300 6700
+F 0 "R35" V 3380 6700 50  0000 C CNN
+F 1 "R" V 3300 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 6700 50  0001 C CNN
+F 3 "" H 3300 6700 50  0001 C CNN
+	1    3300 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R34
+U 1 1 5AF8A238
+P 3300 6350
+F 0 "R34" V 3380 6350 50  0000 C CNN
+F 1 "R" V 3300 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 6350 50  0001 C CNN
+F 3 "" H 3300 6350 50  0001 C CNN
+	1    3300 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R33
+U 1 1 5AF8A338
+P 3300 6000
+F 0 "R33" V 3380 6000 50  0000 C CNN
+F 1 "R" V 3300 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 6000 50  0001 C CNN
+F 3 "" H 3300 6000 50  0001 C CNN
+	1    3300 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R32
+U 1 1 5AF8A7A2
+P 3300 5650
+F 0 "R32" V 3380 5650 50  0000 C CNN
+F 1 "R" V 3300 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 5650 50  0001 C CNN
+F 3 "" H 3300 5650 50  0001 C CNN
+	1    3300 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R31
+U 1 1 5AF8ABC7
+P 3300 5300
+F 0 "R31" V 3380 5300 50  0000 C CNN
+F 1 "R" V 3300 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R30
+U 1 1 5AF8AFAA
+P 3300 4950
+F 0 "R30" V 3380 4950 50  0000 C CNN
+F 1 "R" V 3300 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 4950 50  0001 C CNN
+F 3 "" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R29
+U 1 1 5AF8B2F2
+P 3300 4600
+F 0 "R29" V 3380 4600 50  0000 C CNN
+F 1 "R" V 3300 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 4600 50  0001 C CNN
+F 3 "" H 3300 4600 50  0001 C CNN
+	1    3300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5AF8B643
+P 3300 4250
+F 0 "R28" V 3380 4250 50  0000 C CNN
+F 1 "R" V 3300 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 4250 50  0001 C CNN
+F 3 "" H 3300 4250 50  0001 C CNN
+	1    3300 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R27
+U 1 1 5AF8BA49
+P 3300 3900
+F 0 "R27" V 3380 3900 50  0000 C CNN
+F 1 "R" V 3300 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 3900 50  0001 C CNN
+F 3 "" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R26
+U 1 1 5AF8BF04
+P 3300 3550
+F 0 "R26" V 3380 3550 50  0000 C CNN
+F 1 "R" V 3300 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 3550 50  0001 C CNN
+F 3 "" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R25
+U 1 1 5AF8C0C8
+P 3300 3200
+F 0 "R25" V 3380 3200 50  0000 C CNN
+F 1 "R" V 3300 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 3200 50  0001 C CNN
+F 3 "" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R24
+U 1 1 5AF8C23B
+P 3300 2850
+F 0 "R24" V 3380 2850 50  0000 C CNN
+F 1 "R" V 3300 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 2850 50  0001 C CNN
+F 3 "" H 3300 2850 50  0001 C CNN
+	1    3300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R23
+U 1 1 5AF8C720
+P 3300 2500
+F 0 "R23" V 3380 2500 50  0000 C CNN
+F 1 "R" V 3300 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 2500 50  0001 C CNN
+F 3 "" H 3300 2500 50  0001 C CNN
+	1    3300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R22
+U 1 1 5AF8C842
+P 3300 2150
+F 0 "R22" V 3380 2150 50  0000 C CNN
+F 1 "R" V 3300 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 2150 50  0001 C CNN
+F 3 "" H 3300 2150 50  0001 C CNN
+	1    3300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R21
+U 1 1 5AF8C964
+P 3300 1800
+F 0 "R21" V 3380 1800 50  0000 C CNN
+F 1 "R" V 3300 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R20
+U 1 1 5AF8CA8C
+P 3300 1450
+F 0 "R20" V 3380 1450 50  0000 C CNN
+F 1 "R" V 3300 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 1450 50  0001 C CNN
+F 3 "" H 3300 1450 50  0001 C CNN
+	1    3300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R19
+U 1 1 5AF8CE97
+P 3300 1100
+F 0 "R19" V 3380 1100 50  0000 C CNN
+F 1 "R" V 3300 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 1100 50  0001 C CNN
+F 3 "" H 3300 1100 50  0001 C CNN
+	1    3300 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3450 7050
+Connection ~ 3450 6700
+Connection ~ 3450 6350
+Connection ~ 3450 6000
+Connection ~ 3450 5650
+Connection ~ 3450 5300
+Connection ~ 3450 4950
+Connection ~ 3450 4600
+Connection ~ 3450 4250
+Connection ~ 3450 3900
+Connection ~ 3450 3550
+Connection ~ 3450 3200
+Connection ~ 3450 2850
+Connection ~ 3450 2500
+Connection ~ 3450 2150
+Connection ~ 3450 1800
+Connection ~ 3450 1450
+Wire Wire Line
+	3150 1100 3150 950 
+Connection ~ 3150 950 
+Wire Wire Line
+	3150 1450 3150 1300
+Connection ~ 3150 1300
+Wire Wire Line
+	3150 1800 3150 1650
+Connection ~ 3150 1650
+Wire Wire Line
+	3150 2150 3150 2000
+Connection ~ 3150 2000
+Wire Wire Line
+	3150 2500 3150 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2850 3150 2700
+Connection ~ 3150 2700
+Wire Wire Line
+	3150 3200 3150 3050
+Connection ~ 3150 3050
+Wire Wire Line
+	3150 3550 3150 3400
+Connection ~ 3150 3400
+Wire Wire Line
+	3150 3900 3150 3750
+Connection ~ 3150 3750
+Wire Wire Line
+	3150 4250 3150 4100
+Connection ~ 3150 4100
+Wire Wire Line
+	3150 4600 3150 4450
+Connection ~ 3150 4450
+Wire Wire Line
+	3150 4950 3150 4800
+Connection ~ 3150 4800
+Wire Wire Line
+	3150 5300 3150 5150
+Connection ~ 3150 5150
+Wire Wire Line
+	3150 5650 3150 5500
+Connection ~ 3150 5500
+Wire Wire Line
+	3150 6000 3150 5850
+Connection ~ 3150 5850
+Wire Wire Line
+	3150 6350 3150 6200
+Connection ~ 3150 6200
+Wire Wire Line
+	3150 6700 3150 6550
+Connection ~ 3150 6550
 $EndSCHEMATC
